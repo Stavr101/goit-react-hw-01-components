@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 
 import user from 'data/user.json';
 import { UserDescription } from './UserDescription/UserDescription';
+import { UserStats } from './Stats/UserStats';
 
 export const UserProfile = ({
   user: { username, tag, location, avatar, stats },
@@ -13,8 +14,8 @@ export const UserProfile = ({
         tag={user.tag}
         location={user.location}
         avatar={user.avatar}
-        stats={user.stats}
       />
+      <UserStats stats={stats} />
     </div>
   );
 };
