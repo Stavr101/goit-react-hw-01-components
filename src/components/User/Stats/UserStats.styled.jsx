@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { display, flex } from 'styled-system';
+// import { display, flex } from 'styled-system';
 
 export const UserStatList = styled.ul`
-  display: flex;
+  display: blok;
   text-align: center;
   padding: ${p => p.theme.space[4]}px;
 `;
