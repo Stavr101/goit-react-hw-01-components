@@ -1,10 +1,18 @@
 import user from 'data/user.json';
-import { UserProfile } from './User/UserProfile';
+import data from 'data/data.json';
+import friends from 'data/friends.json';
+import { UserProfile } from './user/UserProfile';
+import { Box } from './Box';
+
+import { Statistics } from './statistics/Statistic';
+import { FriendList } from './friendList/FriendListItem';
 
 export const App = () => {
   return (
-    <div>
+    <Box>
       <UserProfile user={user} />
-    </div>
+      <Statistics data={data} />
+      <FriendList friends={friends} />;
+    </Box>
   );
 };
