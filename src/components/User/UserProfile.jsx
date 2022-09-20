@@ -17,6 +17,7 @@ export const UserProfile = ({ user }) => {
           location={user.location}
           avatar={user.avatar}
         />
+
         <UserStats stats={user.stats} />
       </Profile>
     </Box>
