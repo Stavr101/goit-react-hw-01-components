@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
+import { StatTitle } from './Statistic.styled';
 
 export const TitleList = ({ title }) => {
-  return <h2 className="title">{title}</h2>;
+  return <StatTitle>{title}</StatTitle>;
 };
 
 TitleList.propTypes = {
