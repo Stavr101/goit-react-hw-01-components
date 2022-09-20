@@ -12,7 +12,7 @@ export const UserProfile = ({
 }) => {
   return (
     <Box>
-      <Profile>
+//       <Profile>
         <UserDescription
           username={user.username}
           tag={user.tag}
@@ -20,7 +20,7 @@ export const UserProfile = ({
           avatar={user.avatar}
         />
         <UserStats stats={stats} />
-      </Profile>
+//       </Profile>
     </Box>
   );
 };
