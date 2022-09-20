@@ -1,15 +1,13 @@
 import PropTypes from 'prop-types';
 
-import user from 'data/user.json';
+// import user from 'data/user.json';
 import { UserDescription } from './UserDescription/UserDescription';
 import { UserStats } from './Stats/UserStats';
-// import { Profile } from './UserProfile.styled.jsx';
+import { Profile } from './UserProfile.styled.jsx';
 import { Box } from 'components/Box';
-import { Profile } from './UserProfile.styled';
+// import { Profile } from './UserProfile.styled';
 
-export const UserProfile = ({
-  user: { username, tag, location, avatar, stats },
-}) => {
+export const UserProfile = ({ user }) => {
   return (
     <Box>
       <Profile>
@@ -19,7 +17,7 @@ export const UserProfile = ({
           location={user.location}
           avatar={user.avatar}
         />
-        <UserStats stats={stats} />
+        <UserStats stats={user.stats} />
       </Profile>
     </Box>
   );
